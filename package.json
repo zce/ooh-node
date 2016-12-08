@@ -1,0 +1,31 @@
+{
+  "name": "ooh-node",
+  "version": "0.1.0",
+  "description": "Ooooooooooh nooooooooode!",
+  "main": "index.js",
+  "bin": {
+    "ooh-node": "index"
+  },
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zce/ooh-node.git"
+  },
+  "keywords": [
+    "ooh",
+    "node",
+    "zce",
+    "wedn",
+    "wedn.net",
+    "micua",
+    "micua.com"
+  ],
+  "author": "iceStone <ice@micua.com> (http://www.micua.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zce/ooh-node/issues"
+  },
+  "homepage": "https://github.com/zce/ooh-node#readme"
+}
