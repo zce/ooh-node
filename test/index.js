@@ -5,21 +5,21 @@ module.exports = async function (args) {
     const res = await console.readline()
     console.log(res)
     if (res === 'q' || res === 'quit' || res === 'exit') {
-      console.writeline('Bye bye！')
+      console.writeline('Bye bye!')
       process.exit()
       break;
     }
     const age = parseInt(res)
     if (age) {
       if (age < 18) {
-        console.writeline('太小了，不能看')
+        console.writeline('You are just too young!')
       } else {
-        console.writeline('快看快看')
+        console.writeline('Ooooooooook!')
       }
     } else {
       console.writeline('Input is invalidated.')
     }
-    console.write(`Put enter to continue.`)
+    console.write('Press any key to continue.')
     await console.read()
   }
 }
