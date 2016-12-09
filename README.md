@@ -13,6 +13,10 @@ Ooh node~
 - `console.clear()`
 - `console.colors`
 
+## Requirement
+
+node ^7.0.0
+
 ## Installation
 
 ```bash
