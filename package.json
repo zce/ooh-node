@@ -1,13 +1,14 @@
 {
   "name": "ooh-node",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ooooooooooh nooooooooode!",
   "main": "index.js",
   "bin": {
-    "ooh-node": "index"
+    "ooh-node": "bin/index.js"
   },
   "scripts": {
-    "test": "node index"
+    "pretest": "npm link",
+    "test": "ooh-node test"
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,9 @@
   "bugs": {
     "url": "https://github.com/zce/ooh-node/issues"
   },
-  "homepage": "https://github.com/zce/ooh-node#readme"
+  "homepage": "https://github.com/zce/ooh-node#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "keypress": "^0.2.1"
+  }
 }
