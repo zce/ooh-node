@@ -1,25 +1,28 @@
 module.exports = async function (args) {
   while (true) {
     console.clear()
-    console.write('Input your age: ')
+    console.write(console.colors.gray('Input your age: '))
+
     const res = await console.readline()
     console.log(res)
+
     if (res === 'q' || res === 'quit' || res === 'exit') {
-      console.writeline('Bye bye!')
-      process.exit()
-      break;
+      console.writeline(console.colors.green('Bye bye!'))
+      break
     }
+
     const age = parseInt(res)
     if (age) {
       if (age < 18) {
-        console.writeline('You are just too young!')
+        console.writeline(console.colors.blue('You are just too young!'))
       } else {
-        console.writeline('Ooooooooook!')
+        console.writeline(console.colors.bgYellow('Ooooooooook!'))
       }
     } else {
-      console.writeline('Input is invalidated.')
+      console.writeline(console.colors.red('Input is invalidated.'))
     }
-    console.write('Press any key to continue.')
+    console.write(console.colors.gray('Press any key to continue.'))
+
     await console.read()
   }
 }
