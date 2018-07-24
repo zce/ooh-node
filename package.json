@@ -22,6 +22,10 @@
     "email": "w@zce.me",
     "url": "https://zce.me"
   },
+  "files": [
+    "bin",
+    "lib"
+  ],
   "main": "lib",
   "bin": {
     "ooh-node": "bin/index.js"
